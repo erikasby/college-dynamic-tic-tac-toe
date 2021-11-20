@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <header>Tic Tac Toe</header>
+  <body>
+    <div class="main">
+      <div class="selector">
+        <label for="boardSize" id="boardSizeLabel">Board size</label>
+        <select name="boardSize" id="boardSize">
+          <option value="3">3x3</option>
+          <option value="4">4x4</option>
+          <option value="5">5x5</option>
+        </select>
+        <label for="winSize" id="winSizeLabel">Win size</label>
+        <select name="winSize" id="winSize">
+          <option value="3">3x3</option>
+          <option value="4">4x4</option>
+          <option value="5">5x5</option>
+        </select>
+        <button id="update">Update</button>
+      </div>
+      <div class="game">
+        <div class="turn">Player <span class="player">X</span>'s turn</div>
+        <div class="board" style="grid-template-columns: repeat(3, 1fr)"></div>
+        <div class="winner hide">Player <span class="player">X</span> won!</div>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@700&family=Red+Hat+Mono:wght@700&family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/app.js"></script>
+  </body>
+  <footer>&copy; 2021</footer>
+</html>
